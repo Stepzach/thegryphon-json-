@@ -1,7 +1,13 @@
-import fetch from 'node-fetch';
+
 
 dotenv.config();
 
+const fetch = require('node-fetch');
+
+fetch('https://example.com')
+    .then(res => res.text())
+    .then(body => console.log(body))
+    .catch(err => console.error(err));
 
 const dotenv = require('dotenv');  // Use require instead of import
 dotenv.config(); // Load environment variables from .env file
