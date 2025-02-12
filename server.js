@@ -3,6 +3,14 @@ import fetch from 'node-fetch';
 
 dotenv.config();
 
+
+const dotenv = require('dotenv');  // Use require instead of import
+dotenv.config(); // Load environment variables from .env file
+
+
+const port = process.env.PORT || 3000;
+
+// ... rest of your code
 const express = require('express'); // Use require instead of import
 const app = express();
 
