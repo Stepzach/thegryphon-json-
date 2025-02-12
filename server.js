@@ -1,32 +1,6 @@
 
 
 
-
-const fetch = require('node-fetch');
-
-fetch('https://example.com')
-    .then(res => res.text())
-    .then(body => console.log(body))
-    .catch(err => console.error(err));
-
-const dotenv = require('dotenv');  // Use require instead of import
-dotenv.config(); // Load environment variables from .env file
-
-
-const port = process.env.PORT || 3000;
-
-// ... rest of your code
-const express = require('express'); // Use require instead of import
-const app = express();
-
-app.get('/', (req, res) => {
-    res.send('Hello, World!');
-});
-
-app.listen(3000, () => {
-    console.log('Server listening on port 3000');
-});
-
 const NOTION_API_KEY = process.env.NOTION_API_KEY;
 const DATABASE_ID = process.env.NOTION_DATABASE_ID;
 
