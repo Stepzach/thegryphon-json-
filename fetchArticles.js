@@ -1,5 +1,5 @@
 async function fetchArticles() {
-    const response = await fetch("/api/notion-articles"); // Adjust this URL based on your setup
+    const response = await fetch("https://stepzach.github.io/thegryphon-json-/api/notion-articles"); // Adjust this URL based on your setup
     const articles = await response.json();
   
     // Sort articles by date (most recent first)
